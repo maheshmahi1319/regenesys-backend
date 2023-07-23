@@ -13,15 +13,6 @@ export class UserSeedService {
   async run() {
     await this.repository.save(
       this.repository.create({
-        firstName: 'Super',
-        lastName: 'Admin',
-        email: 'admin@example.com',
-        password: 'secret',
-      }),
-    );
-
-    await this.repository.save(
-      this.repository.create({
         firstName: 'John',
         lastName: 'Doe',
         email: 'john.doe@example.com',
